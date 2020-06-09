@@ -16,5 +16,8 @@
         mail($to, $subject, $txt, $headers);
         header("Location: index?sent=true#contactStrip");
     }
+    else {
+        header("Location: index.php");
+    }
 
 ?>
